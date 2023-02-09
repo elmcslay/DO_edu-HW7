@@ -1,3 +1,3 @@
 FROM nirmata/tomcat9-alpine-jre12-openjdk:latest
 
-RUN cp /tmp/buid/hello-1.0.war $CATALINA_HOME/webapps/
+RUN cp /tmp/buid/hello-1.0.war $CATALINA_HOME/webapps
