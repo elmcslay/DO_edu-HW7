@@ -7,7 +7,7 @@ services:
     volumes:
       - type: volume
         source: artifacts
-        target: /tmp/boxfuse-sample-java/target/hello-1.0.war
+        target: /tmp/boxfuse-sample-java/target/
       
   tomcat:
     build: 
