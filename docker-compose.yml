@@ -14,7 +14,8 @@ services:
       - /tmp:/tmp/build
     ports:
       - 8080:8080
-    depends_on: maven
+    depends_on: 
+      - maven
 
 volumes:
   maven:
