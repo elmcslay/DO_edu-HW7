@@ -5,7 +5,7 @@ services:
     build: 
       context: build/
     volumes:
-      - type: volume
+      - type: bind
         source: /tmp/build
         target: /tmp/boxfuse-sample-java
       
@@ -13,7 +13,7 @@ services:
     build: 
       context: prod/
     volumes: 
-      - type: volume
+      - type: bind
         source: /tmp/build
         target: /tmp
     ports:
