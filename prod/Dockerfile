@@ -1,3 +1,4 @@
-FROM nirmata/tomcat9-alpine-jre12-openjdk:latest
+FROM tomcat:9.0.71-jdk11-temurin-focal
 
-#RUN cp /tmp/hello-1.0.war $CATALINA_HOME/webapps
+
+
