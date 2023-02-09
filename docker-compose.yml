@@ -21,6 +21,4 @@ services:
     depends_on: 
       - maven
 
-volumes:
-  /tmp/build:
       
