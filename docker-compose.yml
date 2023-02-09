@@ -6,7 +6,7 @@ services:
       context: build/
     volumes:
       - type: bind
-        source: /tmp/build
+        source: ./artifacts
         target: /tmp/boxfuse-sample-java/target
       
   tomcat:
@@ -14,7 +14,7 @@ services:
       context: prod/
     volumes: 
       - type: bind
-        source: /tmp/build
+        source: ./artifacts
         target: /usr/local/tomcat/webapp
     ports:
       - 8080:8080
