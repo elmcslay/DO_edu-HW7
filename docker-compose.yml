@@ -7,11 +7,10 @@ services:
     volumes:
       - type: volume
         source: artifacts
-        target: /tmp/boxfuse-sample-java/target/
+        target: /tmp/art
       
   tomcat:
-    build: 
-      context: prod/
+    image: tomcat:9.0.71-jdk11-temurin-focal
     volumes: 
       - type: volume
         source: artifacts
