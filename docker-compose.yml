@@ -5,16 +5,22 @@ services:
     build: 
       context: build/
     volumes:
-      - ./tmp:/tmp/boxfuse-sample-java
+      - type: volume
+        source: /tmp/build
+        target: /tmp/boxfuse-sample-java
       
   tomcat:
     build: 
       context: prod/
     volumes: 
-      - ./tmp:/tmp
+      - type: volume
+        source: /tmp/build
+        target: /tmp
     ports:
       - 8080:8080
     depends_on: 
       - maven
 
+volumes:
+  /tmp/build:
       
