@@ -15,7 +15,7 @@ services:
     volumes: 
       - type: volume
         source: artifacts
-        target: /usr/local/tomcat/webapp
+        target: /usr/local/tomcat/webapps
     ports:
       - 8080:8080
     depends_on: 
