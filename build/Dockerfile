@@ -1,6 +1,6 @@
-FROM maven:3.8.7-openjdk-18-slim
+FROM ubuntu:20.04
 
-RUN apt-get update && apt-get install git -y
+RUN apt-get update && apt-get install git maven -y
 
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git /tmp/boxfuse-sample-java
 WORKDIR /tmp/boxfuse-sample-java
