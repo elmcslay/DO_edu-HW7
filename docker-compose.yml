@@ -7,7 +7,7 @@ services:
     volumes:
       - type: bind
         source: /tmp/build
-        target: /tmp/boxfuse-sample-java
+        target: /tmp/boxfuse-sample-java/target
       
   tomcat:
     build: 
